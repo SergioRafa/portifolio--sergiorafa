@@ -30,14 +30,19 @@ body{
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+.cabecalho__menu__link:focus  {
+    outline: 2px solid var(--cor-terciaria);
+    outline-offset: 4px;
+}
+
 .cabecalho__menu__link:hover{
     cursor: pointer;
-    color: var(--cor-hover);
+    transition: color 0.3s ease-in-out;
    
 }
 .apresentacao{
@@ -76,6 +81,7 @@ body{
     align-items: center;
     gap: 32px;
 }
+
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
@@ -86,28 +92,28 @@ body{
 .apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
-    gap: 16px; /* Espaço entre ícone e texto */
+    gap: 8px; /* Espaço entre ícone e texto */
     border: 2px solid var(--cor-terciaria);
     width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
 }
-
-/* Você pode ajustar os valores de largura e altura dos ícones conforme necessário */
-/* Ajuste a largura e altura dos ícones conforme sua necessidade */
-.apresentacao__links__navegacao .icone {
-    width: 32px; /* Defina a largura desejada para os ícones */
-    height: 32px; /* Defina a altura desejada para os ícones */
+.apresentacao__links__navegacao:focus {
+    outline: 2px solid var(--cor-terciaria);
+    outline-offset: 4px;
 }
+
+
+
     
     .apresentacao__links__navegacao:hover {
             cursor: pointer;    
-            color: var(--cor-hover);
+            transition: color 0.3s ease-in-out;
     
     }
     li {
@@ -130,7 +136,7 @@ body{
         background-color: var(--cor-terciaria);
         text-align: center;
         font-family: var(--fonte-secundaria);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 400;
     }
     .rodape:hover {
@@ -157,6 +163,8 @@ body{
             
             }
         }
+        
+        
     
     
     
